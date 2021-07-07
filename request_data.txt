@@ -1,0 +1,10 @@
+Request Form
+ {
+     'training_data':{
+         'Date':[], # '2021-19-08'
+         'Sales':[] 
+     },
+      'testing_data':{
+          Date:[(2021-19-08),..]
+      }
+# }
