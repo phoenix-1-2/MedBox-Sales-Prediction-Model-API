@@ -53,8 +53,8 @@ def generate_training_data(company, medicine):
     d = {"Date": [], "Stocks Sold": []}
     for _ in range(12000):
         start_date = datetime.date(2015, 1, 1)
-        x = datetime.datetime.now()
-        end_date = datetime.date(x.year, x.month, x.day)
+        current_time = datetime.datetime.now()
+        end_date = datetime.date(current_time.year, current_time.month, current_time.day)
         time_between_dates = end_date - start_date
         days_between_dates = time_between_dates.days
         random_number_of_days = random.randrange(days_between_dates)
