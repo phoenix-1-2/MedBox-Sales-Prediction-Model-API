@@ -4,7 +4,7 @@ import pandas as pd
 import datetime
 import random
 import pandas as pd
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.svm import SVR
 import os
 
 app = Flask(__name__)
@@ -34,7 +34,7 @@ def clean_X_testing_data(testing_data):
 
 
 def apply_regression_model(X, y):
-    clf = RandomForestRegressor(n_estimators=10)
+    clf = SVR(C=0.01)
     clf.fit(X, y)
     return clf
 
